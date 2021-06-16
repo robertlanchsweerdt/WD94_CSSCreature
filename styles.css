@@ -27,10 +27,6 @@ body {
   border: solid 4px white;
 }
 
-.container {
-  outline: solid 1px white;
-}
-
 /* SHARED STYLING */
 
 .bear-head,
@@ -274,8 +270,8 @@ body {
   user-select: none;
   z-index: 2;
 
-  animation: beating-heart 2s linear infinite;
-  animation-direction: alternate;
+  /* animation: beating-heart 2s linear infinite;
+  animation-direction: alternate; */
 }
 
 /* RAINING LOVE */
