@@ -238,13 +238,16 @@ body {
 
 #heart {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 25%;
+  left: 34%;
   transform: translate(-50%, -50%);
 
   display: inline;
   font-size: 3.5rem;
   z-index: 2;
+
+  /* animation: beating-heart 2s linear infinite;
+  animation-direction: alternate; */
 }
 
 /* ANIMATIONS */
@@ -296,5 +299,15 @@ body {
   100% {
     top: -40%;
     transform: rotate(-135deg);
+  }
+}
+
+@keyframes beating-heart {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.4);
   }
 }
