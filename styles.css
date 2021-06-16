@@ -98,6 +98,60 @@ body {
   animation-direction: alternate; */
 }
 
+#left-leg::before,
+#right-leg::before {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 40px;
+  height: 10px;
+  background-color: black;
+  border-radius: 20%;
+}
+
+/* BEAR ARMS */
+
+#left-arm,
+#right-arm {
+  position: absolute;
+  border-radius: 40%;
+
+  height: 150px;
+  width: 50px;
+  z-index: -1;
+}
+
+#left-arm {
+  left: -15%;
+  background-color: var(--clr-brown);
+  /* animation: move-leftArm 1s linear infinite;
+  animation-direction: alternate; */
+}
+
+#right-arm {
+  right: -15%;
+  background-color: var(--clr-brown);
+  /* animation: move-rightArm 1s linear infinite;
+  animation-direction: alternate; */
+}
+
+#left-arm::after,
+#right-arm::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+
+  width: 30px;
+  height: 30px;
+  background-color: var(--clr-tan);
+  border-radius: 50%;
+}
+
 /* BEAR HEART */
 
 #heart {
@@ -130,5 +184,35 @@ body {
 
   to {
     transform: rotate(-45deg);
+  }
+}
+
+@keyframes move-leftArm {
+  0% {
+    top: 7%;
+    transform: rotate(45deg);
+  }
+  50% {
+    top: -20%;
+    transform: rotate(90deg);
+  }
+  100% {
+    top: -40%;
+    transform: rotate(135deg);
+  }
+}
+
+@keyframes move-rightArm {
+  0% {
+    top: 7%;
+    transform: rotate(-45deg);
+  }
+  50% {
+    top: -20%;
+    transform: rotate(-90deg);
+  }
+  100% {
+    top: -40%;
+    transform: rotate(-135deg);
   }
 }
