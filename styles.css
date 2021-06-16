@@ -1,5 +1,10 @@
 /* GENERAL STYLING */
 
+:root {
+  --clr-brown: #964b00;
+  --clr-tan: #d2b48c;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -35,7 +40,7 @@ body {
   position: relative;
   margin: 0 auto;
   border-radius: 50%;
-  background-color: #964b00;
+  background-color: var(--clr-brown);
 }
 
 /* BEAR HEAD AND FEATURES*/
@@ -46,7 +51,7 @@ body {
   height: 120px;
 }
 
-/* BEAR TORSAL AND FEATURES */
+/* BEAR TORSAL  */
 
 .bear-torsal {
   width: 170px;
@@ -62,8 +67,35 @@ body {
 
   width: 120px;
   height: 120px;
-  background-color: tan;
+  background-color: var(--clr-tan);
   border-radius: 50%;
+}
+
+/* BEAR LEGS */
+
+#left-leg,
+#right-leg {
+  position: absolute;
+  top: 50%;
+
+  height: 150px;
+  width: 50px;
+  background-color: var(--clr-brown);
+  border-radius: 20%;
+}
+
+#left-leg {
+  left: 5%;
+  transform: rotate(0deg);
+  /* animation: move-leftLeg 1s linear infinite;
+  animation-direction: alternate; */
+}
+
+#right-leg {
+  right: 5%;
+  transform: rotate(0);
+  /* animation: move-rightLeg 1s linear infinite;
+  animation-direction: alternate; */
 }
 
 /* BEAR HEART */
@@ -77,4 +109,26 @@ body {
   display: inline;
   font-size: 3.5rem;
   z-index: 2;
+}
+
+/* ANIMATIONS */
+
+@keyframes move-leftLeg {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes move-rightLeg {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(-45deg);
+  }
 }
