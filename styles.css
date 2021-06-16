@@ -3,6 +3,9 @@
 :root {
   --clr-brown: #964b00;
   --clr-tan: #d2b48c;
+  --clr-light: #fbfaf5;
+  --clr-pink-light: #ee7bc0;
+  --clr-pink-dark: #eb30a3;
 }
 
 * {
@@ -12,19 +15,43 @@
 body {
   margin: 0;
   padding: 0;
-
   background-color: green;
+  overflow: hidden;
+}
+
+h1,
+p {
+  text-align: center;
+  color: var(--clr-light);
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  width: 40ch;
+  margin-bottom: 2em;
+  line-height: 1.5;
+}
+
+.special-text {
+  font-style: italic;
+  text-decoration: underline;
+  color: var(--clr-pink-light);
+  font-weight: 900;
 }
 
 .site-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
   width: 100%;
   min-height: 100vh;
 
-  border: solid 4px white;
+  border: solid 10px var(--clr-pink-dark);
 }
 
 /* SHARED STYLING */
