@@ -5,7 +5,6 @@
   --clr-tan: #d2b48c;
   --clr-light: #fbfaf5;
   --clr-pink-light: #ee7bc0;
-  --clr-pink-dark: #eb30a3;
 }
 
 * {
@@ -50,8 +49,6 @@ p {
 
   width: 100%;
   min-height: 100vh;
-
-  border: solid 10px var(--clr-pink-dark);
 }
 
 /* SHARED STYLING */
