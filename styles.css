@@ -29,8 +29,6 @@ body {
 
 .container {
   outline: solid 1px white;
-
-  /* transform: rotate(45deg); */
 }
 
 /* SHARED STYLING */
@@ -272,13 +270,30 @@ body {
 
   display: inline;
   font-size: 3.5rem;
+  cursor: pointer;
+  user-select: none;
   z-index: 2;
 
-  /* animation: beating-heart 2s linear infinite;
-  animation-direction: alternate; */
+  animation: beating-heart 2s linear infinite;
+  animation-direction: alternate;
+}
+
+/* RAINING LOVE */
+
+.rainLove {
+  position: fixed;
+  top: -5%;
+  animation: rainLove linear forwards;
+  font-size: 2rem;
 }
 
 /* ANIMATIONS */
+
+@keyframes rainLove {
+  to {
+    top: 110%;
+  }
+}
 
 @keyframes move-leftLeg {
   from {
