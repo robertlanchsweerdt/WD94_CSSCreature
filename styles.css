@@ -218,15 +218,15 @@ p {
 #left-leg {
   left: 5%;
   transform: rotate(0deg);
-  /* animation: move-leftLeg 1s linear infinite;
-  animation-direction: alternate; */
+  animation: move-leftLeg 1s linear infinite;
+  animation-direction: alternate;
 }
 
 #right-leg {
   right: 5%;
   transform: rotate(0);
-  /* animation: move-rightLeg 1s linear infinite;
-  animation-direction: alternate; */
+  animation: move-rightLeg 1s linear infinite;
+  animation-direction: alternate;
 }
 
 #left-leg::before,
@@ -258,15 +258,15 @@ p {
 #left-arm {
   left: -15%;
   background-color: var(--clr-brown);
-  /* animation: move-leftArm 1s linear infinite;
-  animation-direction: alternate; */
+  animation: move-leftArm 1s linear infinite;
+  animation-direction: alternate;
 }
 
 #right-arm {
   right: -15%;
   background-color: var(--clr-brown);
-  /* animation: move-rightArm 1s linear infinite;
-  animation-direction: alternate; */
+  animation: move-rightArm 1s linear infinite;
+  animation-direction: alternate;
 }
 
 #left-arm::after,
@@ -297,8 +297,8 @@ p {
   user-select: none;
   z-index: 2;
 
-  /* animation: beating-heart 2s linear infinite;
-  animation-direction: alternate; */
+  animation: beating-heart 2s linear infinite;
+  animation-direction: alternate;
 }
 
 /* RAINING LOVE */
